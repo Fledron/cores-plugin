@@ -1,0 +1,53 @@
+name: Cores
+main: de.fledron.cores.Main
+version: 1.2
+author: Fledron
+authors: ["Fledron"]
+website: http://www.youtube.com/user/aagamesiscool
+commands:
+   cores:
+     description: Zeigt Infos
+     permission: cores.info
+     usage: Einfach /cores
+   forcejoin:
+     description: Joine ein Team
+     permission: cores.join
+     usage: Einfach /forcejoin <Spieler> <RED/BLUE> <gameID>
+   join:
+     description: Joine eine Runde
+     permission: cores.play
+     usage: Einfach /join <1/2/3...>
+   leave:
+     description: Verlasse eine Runde
+     permission: cores.play
+     usage: Einfach /leave
+   create:
+     description: Erstellt eine Arena
+     permission: cores.create
+     usage: Einfach /create <Spawn Blue X> <Spawn Blue Y> <Spawn Blue Z> <Spawn Red X> <Spawn Red Y> <Spawn Red Z> <MaxPlayers> <MinPlayers> <gameID>
+   setspawn:
+     description: Setzt den Lobby-Spawn
+     permission: cores.create
+     usage: Einfach /setspawn <X> <Y> <Z>
+   setarena:
+     description: Setzt die Arena Grenze
+     permission: cores.create
+     usage: Einfach /setarena <X1> <Y1> <Z1> <X2> <Y2> <Z2> <ID>
+   setcore:
+     description: Setzt die 4 Cores
+     permission: cores.create
+     usage: Einfach /setcore <CoreBlue1 X> <CoreBlue1 Y> <CoreBlue1 Z> <CoreRed1 X> <CoreRed1 Y> <CoreRed1 Z> <CoreBlue2 X> <CoreBlue2 Y> <CoreBlue2 Z> <CoreRed2 X> <CoreRed2 Y> <CoreRed2 Z> <gameID>
+
+permissions:
+ cores.info:
+     description: Rechte fuer Infos anzeigen lassen
+     default: op
+ cores.join:
+     description: Rechte fuer ForceJoin Befehl
+     default: op
+ cores.play:
+     description: Rechte fuer Join Befehl
+     default: true
+ cores.create:
+     description: Rechte fuer Create Befehl
+     default: op
